@@ -20,13 +20,31 @@ header {
 }
 
 header nav{
-   
-    
+   align-items: center;
+   display: flex; 
+   justify-content: flex-end;
+   margin: 0 auto;
+   max-width: 1200px;
+   width: 100%;
 }
 
 header nav a{ 
+    color: black;
+    font-weight:bold;
+    margin: 0 15px;
+    padding: 5px;
+    text-decoration: none;
 
 
+}
+
+header nav a:last-of-type {
+    margin-right: 0;
+}
+
+
+header nav a:first-of-type{
+    margin-left: 0; 
 }
 
 section.section-element {
@@ -247,6 +265,41 @@ section.heading{
 .circle.circle-one{
     bottom: 48px;
     left: 48px;
+}
+
+.simple-javascript-section {
+    background-color: #FAEFD3;
+}
+
+
+.simple-javascript-section .interior  {
+    border-color: #644904;
+    color: #644904;
+}
+
+.simple-javascript-section h1 {
+    color: #644904;
+
+}
+
+.simple-javascript-section p {
+    color: #504D46;
+
+}
+
+
+
+.counter-button-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.counter-button-wrapper p {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 74px; 
+    margin: 0 40px 0 0; 
+
 }
 
 footer{

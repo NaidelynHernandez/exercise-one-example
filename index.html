@@ -13,14 +13,14 @@
 
         <nav>
         
-            <a>Box Model  </a> 
-            <a>flexbox  </a> 
-            <a>Positioning Elements </a> 
-            <a>Heading Usage  </a> 
-            <a>Simple JavaScript </a> 
+            <a href="#box-model">Box Model  </a> 
+            <a href="#flex-box">flexbox  </a> 
+            <a href="#positioning-section">Positioning Elements </a> 
+            <a href="#heading-section">Heading Usage  </a> 
+            <a href="#simple-javascript">Simple JavaScript </a> 
 
 
-
+  
         </nav> 
 
     </header> 
@@ -86,14 +86,37 @@
                 <p>And could you put anither paragraph (or two, or three...) under this further describing this concept. (p)</p>
             </div>
         </section> 
-        <section id="simple-javascript" class="simple-javascript section-element">
-            <div class="interior"></div>
-        </section> 
+        
+        
+            <section
+                id="simple-javascript"
+                class="simple-javascript-section section-element">
+                    <script> 
+                        let counter= 0; 
+
+                        function increaseCounterValue() {
+                            counter = counter + 1; 
+                            const counterDiv = document.querySelector('#counter');
+                            counterDiv.innerHTML = counter; 
+                        }
+                    </script>
+                    <div class="interior">
+                        <h1>Simple Javascript</h1>
+                        <div class="counter-button-wrapper">
+                            <p id="counter">0</p>
+                            <div id="button">
+                                <button onclick="increaseCounterValue()">
+                                    Click to Increase</button>
+                            </div>
+                        </div>
+                    </div>
+            
+            </section>
+
         </main> 
         
-<footer> 
- <h2> Student Name -  Semester, Year</h2>
-
+        <footer> 
+            <h2> Student Name -  Semester, Year</h2>
         </footer> 
         
         
